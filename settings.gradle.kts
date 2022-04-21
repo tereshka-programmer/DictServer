@@ -1,0 +1,1 @@
+rootProject.name = "com.server.ktor-ser"

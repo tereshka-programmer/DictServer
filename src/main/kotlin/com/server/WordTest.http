@@ -1,0 +1,50 @@
+POST http://127.0.0.1:8080/word
+Content-Type: application/json
+
+{
+  "id": "100",
+  "enWord": "Jane",
+  "ruWord": "Smith",
+  "chWord": "jane.smith@company.com"
+}
+
+###
+POST http://127.0.0.1:8080/word
+Content-Type: application/json
+
+{
+  "id": "200",
+  "enWord": "Jooooooone",
+  "ruWord": "Smith",
+  "chWord": "jane.smith@company.com"
+  "chTranscript": "jane.smith@company.com"
+}
+
+###
+POST http://127.0.0.1:8080/word
+Content-Type: application/json
+
+{
+  "id": "300",
+  "enWord": "adsfadfssafddfs",
+  "ruWord": "Smith",
+  "chWord": "jane.smith@company.com"
+}
+
+###
+GET http://127.0.0.1:8080/word
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/word/200
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/word/500
+Accept: application/json
+
+###
+DELETE http://127.0.0.1:8080/word/100
+
+###
+DELETE http://127.0.0.1:8080/word/500
